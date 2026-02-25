@@ -37,6 +37,9 @@
                         class="hidden sm:inline">{{ auth()->user()->name }}:Applications</a>
                 </li>
                 <li>
+                    <a href="{{ route('my-jobs.index') }}">My Jobs</a>
+                </li>
+                <li>
                     <form action="{{ route('auth.destroy') }}" method="POST">
                         @csrf
                         @method('DELETE')
